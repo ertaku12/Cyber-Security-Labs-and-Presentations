@@ -1,0 +1,65 @@
+<html>
+  <head>
+         <!--
+         <script>
+            if (window.top !== window.self) {
+                window.top.location = window.self.location;
+            }
+        </script>
+      -->
+
+    <title>Demo Sayfa</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f8;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .card {
+        background: #fff;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        border-radius: 16px;
+        padding: 40px 32px 32px 32px;
+        min-width: 320px;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+      }
+      h1 {
+        color: #007bff;
+        font-size: 2.2rem;
+        margin-bottom: 16px;
+      }
+      p {
+        color: #444;
+        font-size: 1.1rem;
+        margin-bottom: 32px;
+      }
+      button {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        background: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(40,167,69,0.12);
+        transition: background 0.2s;
+      }
+      button:hover {
+        background: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Demo Web Sayfası</h1>
+      <p>Bu sayfa clickjacking testleri için kullanılabilir.<br>Gerçek bir web uygulaması gibi görünecek şekilde tasarlanmıştır.</p>
+      <button onclick="alert('Demo butonuna tıkladınız!')">Demo Buton</button>
+    </div>
+  </body>
+</html>

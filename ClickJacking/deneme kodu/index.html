@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Clickjack test page</title>
+        <style>
+            .container {
+                position: relative;
+                width: 500px;
+                height: 500px;
+            }
+            .iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            .cover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 500px;
+                height: 500px;
+                z-index: 2;
+                background: rgba(255,255,255,0.01);
+            }
+            .fake-btn {
+                position: absolute;
+                top: 340px; 
+                left: 120px; 
+                z-index: 3;
+                padding: 20px 40px;
+                background: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                font-size: 18px;
+                cursor: pointer;
+                opacity: 0; /* 0.8 yaparsan gözükür */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <iframe class="iframe" src="demo.html" width="500" height="500"></iframe>
+            <div class="cover"></div>
+            <button class="fake-btn" onclick="alert('Doğru butona tıkladığınızı düşündünüz.')">Buraya Tıkla</button>
+        </div>
+    </body>
+</html>
